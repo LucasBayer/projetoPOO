@@ -9,5 +9,5 @@
  */
 public class Confeitaria {
 
-    private Endereco endereco;
+    
 }
