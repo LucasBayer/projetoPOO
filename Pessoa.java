@@ -1,11 +1,10 @@
-
- package projetoPOO;
-
+package projetoPOO;
+ 
 public abstract class Pessoa {
-     private String nomeCompleto; // private String sobrenome; //fazer um metodo que pega a ultima frase da string passa pelo scanner, para o usuario ficar nome + ultimo sobrenome
+    private String nomeCompleto; // private String sobrenome; //fazer um metodo que pega a ultima frase da string passa pelo scanner, para o usuario ficar nome + ultimo sobrenome
     private Endereco endereco;
     private String email;
-    private Telefone telefone; //uma pessoa pode ter dois telefone...pode ter dois emails?sim, vou implementar outra classe... nao!
+    private String telefone; //uma pessoa pode ter dois telefone...pode ter dois emails?sim, vou implementar outra classe... nao!
     
     public Pessoa () {
      this.endereco = null;
@@ -14,9 +13,9 @@ public abstract class Pessoa {
      this.telefone = null;
     }
 
-    public Pessoa(String nomeCompleto,String email, Telefone telefone ,Endereco endereco) {
+    public Pessoa(String nomeCompleto,String email, String telefone ,Endereco endereco) {
         this.nomeCompleto = nomeCompleto;
-        this.endereco = endereco;
+        this.endereco = endereco; //INSTANCIAR DENTRO DO CONSTRUTOR PARA FAZER UMA COMPOSIÇAO?
         this.email = email;
         this.telefone = telefone;             
     }
@@ -46,12 +45,13 @@ public abstract class Pessoa {
         this.email = email;
     }
 
-    public Telefone getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
     //falta VALIDAÇAO
-    public void setTelefone(Telefone telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+    
 }

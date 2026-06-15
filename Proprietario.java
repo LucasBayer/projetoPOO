@@ -1,6 +1,13 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
  package projetoPOO;
-
-public class Proprietario {
-
+/**
+ *
+ * @author Lucas
+ */
+public class Proprietario implements FazerEncomenda {
+    private Pessoa pessoa;
+    private Confeitaria confeitaria;
 }

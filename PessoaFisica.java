@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
  package projetoPOO;
  import java.time.LocalDate;
  import java.time.Period;
-
-public class PessoaFisica extends Pessoa{
-  private String cpf;
+ 
+public class PessoaFisica extends Pessoa {
+    private String cpf;
     private LocalDate dataNascimento;
     
     //construtores
@@ -17,7 +14,7 @@ public class PessoaFisica extends Pessoa{
     this.cpf = "ND";
     this.dataNascimento = null;
 }  
-    public PessoaFisica (String nomeCompleto,String cpf,LocalDate dataNascimento,String email, Telefone telefone ,Endereco endereco ){
+    public PessoaFisica (String nomeCompleto,String cpf,LocalDate dataNascimento,String email, String telefone ,Endereco endereco ){
         super(nomeCompleto,email,telefone,endereco);
         this.cpf= cpf;
         this.dataNascimento = dataNascimento;

@@ -4,9 +4,8 @@
  */
  package projetoPOO;
 import java.time.LocalDate;
-
-public class PessoaJuridica extends Pessoa{
- private String cnpj;
+public class PessoaJuridica extends Pessoa {
+    private String cnpj;
     private String razaoSocial;
     private LocalDate dataAbertura;
 //Construtores
@@ -17,7 +16,7 @@ public class PessoaJuridica extends Pessoa{
         this.dataAbertura = null;
     }
 
-    public PessoaJuridica(String cnpj, String razaoSocial,LocalDate dataAbertura , String nomeCompleto, String email, Telefone telefone, Endereco endereco) {
+    public PessoaJuridica(String cnpj, String razaoSocial,LocalDate dataAbertura , String nomeCompleto, String email, String telefone, Endereco endereco) {
         super(nomeCompleto, email, telefone, endereco);
         this.cnpj = cnpj;
         this.razaoSocial = razaoSocial;
@@ -48,5 +47,5 @@ public class PessoaJuridica extends Pessoa{
     public void setRazaoSocial(String razaoSocial) {
         this.razaoSocial = razaoSocial;
     }
-
+    
 }

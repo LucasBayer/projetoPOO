@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
- package projetoPOO;
-/**
- *
- * @author Lucas
- */
-public class Confeitaria {
 
+ package projetoPOO;
+
+public class Confeitaria {
+    private Categoria categorias[];
+    private String nome;
+    private Proprietario proprietario;
+    private Endereco endereco;
+    private String telefone;
+    
     
 }
