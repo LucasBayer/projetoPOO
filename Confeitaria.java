@@ -8,5 +8,6 @@
  * @author Lucas
  */
 public class Confeitaria {
+
     private Endereco endereco;
 }
