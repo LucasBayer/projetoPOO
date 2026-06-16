@@ -1,33 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
- package projetoPOO;
-/**
- *
- * @author Lucas
- */
+package projetoPOO;
+
 public class Produto {
     private String nome;
     private String tamanho;
-    private double peso;
+    private double preco;
     private Categoria categoria;
 
     public Produto (){
         this.nome = "nd";
         this.tamanho = "nd";
-        this.peso = 0;
+        this.preco = 0;
         this.categoria = null;
         
     } 
-
-    public Produto(String nome, String tamanho, double peso, Categoria categoria) {
+    
+    public Produto(String nome, String tamanho, double preco, Categoria categoria) {
         this.nome = nome;
         this.tamanho = tamanho;
-        this.peso = peso;
+        this.preco = preco;
         this.categoria = categoria;
+        
     }
+    //metodos 
     
+    public String imprimirInfoProduto (){
+        String produto ="Nome: " + nome +"tamanho: " + tamanho +"preco: "+ preco +" categoria: "+ categoria ;
+        return produto;
+    }
     
     public String getNome() {
         return nome;
@@ -45,12 +44,12 @@ public class Produto {
         this.tamanho = tamanho;
     }
 
-    public double getPeso() {
-        return peso;
+    public double getpreco() {
+        return preco;
     }
 
-    public void setPeso(double peso) {
-        this.peso = peso;
+    public void setpreco(double preco) {
+        this.preco = preco;
     }
 
     public Categoria getCategoria() {
